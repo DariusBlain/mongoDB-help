@@ -117,7 +117,7 @@ export const sendResetPasswordToken = async (email) => {
 
   const resetLink = `${env(
     ENV_VARS.APP_DOMAIN,
-  )}/reset-password?token=${resetToken}`;
+  )}/auth/reset-password?token=${resetToken}`;
 
   try {
     await emailClient.sendMail({

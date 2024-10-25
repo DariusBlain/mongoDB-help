@@ -10,5 +10,5 @@ export const saveImageLocally = async (file) => {
 
   await fs.rename(oldPath, newPath);
 
-  return `${env(ENV_VARS.BACKEND_DOMAIN)}/files/${filename}`;
+  return `${env(ENV_VARS.BACKEND_DOMAIN)}/upload/${filename}`;
 };
